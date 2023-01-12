@@ -1,0 +1,31 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <h1 style="font-weight: bold; color: blue; margin-top: 30%;">Login</h1>
+        <hr>
+        <form style="margin-top: 10%;" [formGroup]="login" (ngSubmit)="onSubmit()">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form2Example1" class="form-control" formControlName="username" />
+            <label class="form-label" for="form2Example1">Username</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="form2Example2" class="form-control" formControlName="password" />
+            <label class="form-label" for="form2Example2">Password</label>
+          </div>
+
+          <!-- Submit button -->
+          <button class="btn btn-primary btn-block mb-4">Login</button>
+
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p>Not a member? <a href="/error404page">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
